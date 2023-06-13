@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Buscador múltiples campos - JS Moderno </title>
+    <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">  
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+    <h1>Buscador de Personajes de Dragon Ball</h1>
+
+    <div class="contenedor">
+
+    
+        <form id="buscador">
+            <div class="row">
+                <div class="three columns">
+                    <label for="marca">Raza</label>
+                    <select class="u-full-width" id="raza">
+                        <option value="">Seleccione</option>
+                        <option value="Saiyan">Saiyan</option>
+                        <option value="Human/Saiyan">Human/Saiyan</option>
+                        <option value="Android">Android</option>
+                        <option value="Majin">Majin</option>
+                        <option value="God">God</option>
+                        <option value="Namekian">Namekian</option>
+                        <option value="Human">Human</option>
+                    </select>
+                </div>
+                <div class="three columns">
+                    <label for="year">Genero</label>
+                    <select class="u-full-width" id="genero">
+                        <option value="">Seleccione</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+                <div class="three columns">
+                    <label for="minimo">Vida</label>
+                    <select class="u-full-width" id="vida">
+                            <option value="">Seleccione</option>
+                    </select>
+                </div>
+                <div class="three columns">
+                    <label for="maximo">Ataque</label>
+                    <select class="u-full-width" id="ataque">
+                            <option value="">Seleccione</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <div class="four columns">
+                        <label for="puertas">Defensa</label>
+                        <select class="u-full-width" id="defensa">
+                                <option value="">Seleccione</option>
+                        </select>
+                    </div>
+                    <div class="four columns">
+                        <label for="transmision">Ki</label>
+                        <select class="u-full-width" id="ki">
+                                <option value="">Seleccione</option>
+                        </select>
+                    </div>
+                    
+                </div>
+            </div>
+        </form>
+
+
+        <h1>Resultados</h1>
+        <div id="resultado"></div>
+    </div>
+
+    <a class="sitio-web" rel="nofollow noopener noreferrer" >Código Con JPulH</a>
+
+    <script src="js/db.js"></script>
+    <script src="js/app.js"></script>
+    
+</body>
+</html>
